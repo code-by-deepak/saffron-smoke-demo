@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import {
-  Flame, Leaf, Drumstick, Star, MapPin, Phone, Mail, Clock,
+  Flame, Star, MapPin, Phone, Mail, Clock,
   Instagram, Facebook, Utensils, Music, Wine, MessageCircle, ArrowRight, Quote,
 } from "lucide-react";
 
