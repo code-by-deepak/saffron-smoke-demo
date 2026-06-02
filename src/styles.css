@@ -46,21 +46,23 @@
   --radius: 0.25rem;
 
   /* Deep midnight black + warm gold */
-  --background: oklch(0.13 0.012 60);
-  --foreground: oklch(0.94 0.02 80);
+  /* Slightly warmer, softer background; brighter foreground for comfortable reading */
+  --background: oklch(0.15 0.012 60);
+  --foreground: oklch(0.96 0.018 85);
   --ink: oklch(0.09 0.01 60);
 
-  --card: oklch(0.16 0.014 60);
-  --card-foreground: oklch(0.94 0.02 80);
-  --popover: oklch(0.16 0.014 60);
-  --popover-foreground: oklch(0.94 0.02 80);
+  --card: oklch(0.18 0.014 60);
+  --card-foreground: oklch(0.96 0.018 85);
+  --popover: oklch(0.18 0.014 60);
+  --popover-foreground: oklch(0.96 0.018 85);
 
-  --primary: oklch(0.78 0.14 78);          /* gold */
+  --primary: oklch(0.82 0.13 80);          /* gold */
   --primary-foreground: oklch(0.13 0.012 60);
-  --secondary: oklch(0.2 0.018 60);
-  --secondary-foreground: oklch(0.94 0.02 80);
-  --muted: oklch(0.2 0.014 60);
-  --muted-foreground: oklch(0.7 0.03 80);
+  --secondary: oklch(0.22 0.018 60);
+  --secondary-foreground: oklch(0.96 0.018 85);
+  --muted: oklch(0.22 0.014 60);
+  --muted-foreground: oklch(0.82 0.025 80);
+
   --accent: oklch(0.78 0.14 78);
   --accent-foreground: oklch(0.13 0.012 60);
   --destructive: oklch(0.6 0.22 28);
