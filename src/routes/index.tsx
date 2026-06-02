@@ -137,7 +137,7 @@ function Hero() {
         transition={{ delay: 4.2, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
       >
-        <span className="text-[10px] tracking-[0.4em] uppercase text-gold/60">Scroll</span>
+        <span className="text-[10px] tracking-[0.4em] uppercase text-gold/85">Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
@@ -503,7 +503,7 @@ function Reserve() {
               <div>
                 <label className="block text-[10px] tracking-[0.3em] uppercase text-gold/80 mb-2">Special Requests</label>
                 <textarea rows={3}
-                  className="w-full bg-transparent border border-gold/20 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-gold focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-gold/20 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/85 focus:border-gold focus:outline-none transition-colors"
                   placeholder="Allergies, seating preference, surprise plans..." />
               </div>
               <GoldButton type="submit" className="w-full mt-4">
@@ -530,7 +530,7 @@ function Input({ label, ...props }: { label: string } & React.InputHTMLAttribute
     <div>
       <label className="block text-[10px] tracking-[0.3em] uppercase text-gold/80 mb-2">{label}</label>
       <input {...props}
-        className="w-full bg-transparent border border-gold/20 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-gold focus:outline-none transition-colors" />
+        className="w-full bg-transparent border border-gold/20 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/85 focus:border-gold focus:outline-none transition-colors" />
     </div>
   );
 }
@@ -660,7 +660,7 @@ function Press() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 items-center">
           {press.map((p, i) => (
             <Reveal key={p} delay={i * 0.08}>
-              <p className="font-display italic text-base md:text-lg text-muted-foreground/70 hover:text-gold transition-colors duration-700 leading-tight">
+              <p className="font-display italic text-base md:text-lg text-muted-foreground/90 hover:text-gold transition-colors duration-700 leading-tight">
                 {p}
               </p>
             </Reveal>
@@ -728,7 +728,7 @@ function ContactRow({ Icon, title, lines }: { Icon: React.ElementType; title: st
           <Icon className="h-4 w-4" strokeWidth={1.4} />
         </div>
         <div>
-          <p className="text-[10px] tracking-[0.35em] uppercase text-gold/70 mb-1">{title}</p>
+          <p className="text-[10px] tracking-[0.35em] uppercase text-gold/90 mb-1">{title}</p>
           {lines.map((l) => <p key={l} className="text-foreground font-light">{l}</p>)}
         </div>
       </div>
@@ -772,19 +772,19 @@ function Footer() {
                 </a>
               ))}
             </div>
-            <p className="text-[10px] tracking-[0.3em] uppercase text-gold/70 mb-3">Newsletter</p>
+            <p className="text-[10px] tracking-[0.3em] uppercase text-gold/90 mb-3">Newsletter</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex">
               <input type="email" placeholder="your@email.com"
                      className="flex-1 bg-transparent border border-gold/20 px-3 py-2.5 text-xs text-foreground focus:border-gold focus:outline-none" />
               <button className="px-4 bg-gradient-gold text-ink text-[10px] tracking-[0.25em] uppercase">Join</button>
             </form>
-            <p className="text-[10px] text-muted-foreground/60 mt-3">Exclusive offers &amp; event invites.</p>
+            <p className="text-[10px] text-muted-foreground/85 mt-3">Exclusive offers &amp; event invites.</p>
           </div>
         </div>
 
         <div className="gold-divider mb-8" />
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-[0.3em] uppercase text-muted-foreground/70">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-[0.3em] uppercase text-muted-foreground/90">
           <p>© 2025 Saffron &amp; Smoke. All Rights Reserved.</p>
           <p>Crafted with <span className="text-gold">✦</span> in New Delhi</p>
         </div>
